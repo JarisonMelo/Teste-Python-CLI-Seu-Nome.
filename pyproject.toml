@@ -1,0 +1,19 @@
+[project]
+name = "mathquiz"
+version = "1.0.0"
+description = "Um gerador de quiz de aritmética via linha de comando."
+authors = [{ name = "[Seu Nome]", email = "[Seu Email]" }]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "rich"
+]
+
+[project.scripts]
+mathquiz = "mathquiz.cli:main"
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "ruff"
+]
